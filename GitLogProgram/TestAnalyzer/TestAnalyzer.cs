@@ -29,12 +29,12 @@ namespace Omgtu.GitLog
             {
                 while ((line = file.ReadLine()) != null)
                 {
-                    if (line.StartsWith(""))
+                    if (line.StartsWith("commit"))
                         numCommitsExpected++;
                 }
             }
 
-            Assert.Equals(numCommitsExpected, analyzer.Entries.Count);
+            Assert.AreEqual(numCommitsExpected, analyzer.Entries.Count);
         }
     }
 }
