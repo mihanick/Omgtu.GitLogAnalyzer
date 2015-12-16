@@ -1,0 +1,174 @@
+commit eeb571f0b4ae52be2dea4fac60baf359faec9fa9
+Merge: f1d9a3b 519df39
+Author: mihanick <mihanick@gmail.com>
+Date:   Mon Nov 16 12:22:27 2015 +0600
+
+    Merge remote-tracking branch 'refs/remotes/KalitaAleks/master'
+
+commit 519df39cd759f7c68f829db477b61f50f5dad430
+Merge: 024563d a061df3
+Author: KalitaAleks <kalita.aliksandr@mail.ru>
+Date:   Sat Nov 7 20:26:07 2015 +0600
+
+    Merge remote-tracking branch 'refs/remotes/origin/Анализ'
+
+commit 024563d5f45faa8c2d0162fb52d305534b4ae1c8
+Merge: 667ac1e 090cc24
+Author: KalitaAleks <kalita.aliksandr@mail.ru>
+Date:   Sat Nov 7 20:25:58 2015 +0600
+
+    Merge remote-tracking branch 'refs/remotes/origin/Дизайн'
+
+commit a061df398af190868358482bda7e39d95c96a6c6
+Author: KalitaAleks <kalita.aliksandr@mail.ru>
+Date:   Fri Nov 6 10:21:26 2015 +0600
+
+    Созданы требования к бета версии
+
+commit 090cc24a052f5fea0a7b6cf610cc290fc04b3df4
+Author: ganker111 <princeon@mail.ru>
+Date:   Fri Nov 6 09:49:47 2015 +0700
+
+    1
+
+commit b5bec3595bda7bb6de146d795cfb28b75586d2e2
+Author: Kalas12 <vie95@mail.ru>
+Date:   Thu Oct 15 09:14:18 2015 +0600
+
+    Добавить видео
+
+commit 603f21d990b3458d9826a4fb060b4e10a2ebafa9
+Author: Kalas12 <vie95@mail.ru>
+Date:   Thu Oct 15 09:12:12 2015 +0600
+
+    Добавить звуки кнопок
+
+commit ae2f2cf4caea9f196ca7fd575ee00922aef289ba
+Author: Kalas12 <vie95@mail.ru>
+Date:   Thu Oct 15 09:09:21 2015 +0600
+
+    Добавить музыку
+    
+    Добавлены музыкальные файлы
+
+commit dd79236b7965c5a53e589b8e512f101f1b977793
+Author: Kalas12 <vie95@mail.ru>
+Date:   Thu Oct 15 09:06:26 2015 +0600
+
+    отредактирован файл спарвки
+
+commit 51bcfe10abfaec67149831f371be37fd17b98052
+Author: KalitaAleks <kalita.alieksandr@mail.ru>
+Date:   Thu Oct 15 09:02:40 2015 +0600
+
+    Создана справка
+
+commit 0cc8f92db9ac972d85b27d4cf9d8438141376af7
+Author: KalitaAleks <kalita.alieksandr@mail.ru>
+Date:   Thu Oct 15 08:41:35 2015 +0600
+
+    ДОбавлен текст справки
+
+commit 90b222133874b91aec51ef8419bceb905de7e079
+Author: ganker111 <princeon@mail.ru>
+Date:   Wed Oct 14 17:37:24 2015 +0300
+
+    Дизайн
+
+commit 21e5a95425550637b1dba10c709e16abbf4c36f6
+Author: KalitaAleks <kalita.alieksandr@mail.ru>
+Date:   Wed Oct 14 18:47:30 2015 +0600
+
+    Создан переход между словами
+
+commit 667ac1ef685755b22e7030d9a7cfbab3dc3fbd8d
+Merge: 9a5fb02 e442208
+Author: KalitaAleks <kalita.alieksandr@mail.ru>
+Date:   Tue Oct 13 19:53:16 2015 +0600
+
+    Merge remote-tracking branch 'refs/remotes/origin/Develop'
+
+commit e442208eda88efc317fc0d693232576e8f8ca701
+Author: KalitaAleks <kalita.alieksandr@mail.ru>
+Date:   Tue Oct 13 19:48:48 2015 +0600
+
+    Созданы формы для каждой категории, все настроено под релиз альфа версии
+
+commit 81dc003459da7fae809bea0800fb2890711c04f3
+Merge: 1fa25b9 2b6e3c7
+Author: ganker111 <princeon@mail.ru>
+Date:   Mon Oct 12 18:15:56 2015 +0300
+
+    Merge branch 'Develop' into Fofms
+
+commit 2b6e3c76302fdd1c5e027391628be62b875bcf59
+Author: KalitaAleks <kalita.alieksandr@mail.ru>
+Date:   Sun Oct 11 18:40:54 2015 +0600
+
+    Добавлена картика виселицы,  создана функция для кнопок по изменению их цвета, добаввлены формы на выйгрыш и проигрыш
+
+commit b589ef223a910cabc9f38fa47fd541ba0d95dfae
+Author: KalitaAleks <kalita.alieksandr@mail.ru>
+Date:   Sat Oct 10 09:33:43 2015 +0600
+
+    добавлена папка с фоном и кнопками , создана функция реализующая игру
+
+commit de61ec005944528f22db3a2d1cd35a28d6b719c9
+Merge: 3336ce9 dcaf8f0
+Author: Калита Александр <kalita.alieksandr@mail.ru>
+Date:   Fri Oct 9 10:26:55 2015 +0600
+
+    Merge pull request #1 from mihanick/Develop
+    
+    Добавить комментарии по коду
+
+commit dcaf8f022ac8a431aafe32659b5751caace9b530
+Author: mihanick <mihanick@gmail.com>
+Date:   Fri Oct 9 10:23:56 2015 +0600
+
+    Добавить комментарии по коду
+
+commit 1fa25b945a3c0a20c4ff6ea7cb55e372a97f6c4f
+Author: ganker111 <princeon@mail.ru>
+Date:   Thu Oct 8 09:19:50 2015 +0300
+
+    Дизайн, отдельных частей, и общий вид
+
+commit d8876eb8824e21ada06851c8f288f552b5b5f4b1
+Author: ganker111 <princeon@mail.ru>
+Date:   Thu Oct 8 09:18:10 2015 +0300
+
+    Revert "Creat Forms"
+    
+    This reverts commit 09435157023488d5dd38baec5bcadc4274983bde.
+
+commit 09435157023488d5dd38baec5bcadc4274983bde
+Author: KalitaAleks <kalita.alieksandr@mail.ru>
+Date:   Wed Sep 30 16:10:50 2015 +0600
+
+    Creat Forms
+    
+    Создание всех форм и переходов между ними
+
+commit 9a5fb0299d58bb9a984f8aab1a72cde28ca2a761
+Merge: f1d9a3b 3336ce9
+Author: KalitaAleks <kalita.alieksandr@mail.ru>
+Date:   Mon Sep 14 15:06:59 2015 +0600
+
+    Merge branch 'Develop'
+
+commit 3336ce997df35bfe76931fc081c92c87e71aa274
+Author: KalitaAleks <kalita.alieksandr@mail.ru>
+Date:   Fri Sep 11 20:04:39 2015 +0600
+
+    Создать начальный экран  окно, и переход между ними
+    
+    Создан начальный экран окно и переход между ними
+
+commit f1d9a3be906c5dc9556cd267ed8aaeb3f4da803a
+Author: KalitaAleks <kalita.alieksandr@mail.ru>
+Date:   Fri Sep 11 18:17:21 2015 +0600
+
+    Создать  репозиторий
+    
+    Создан репозиторий
