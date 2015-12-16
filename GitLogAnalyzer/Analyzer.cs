@@ -9,7 +9,6 @@ namespace Omgtu.GitLog
 {
     public class Analyzer
     {
-        public class LogEntry
         public class LogEntry : IComparable<LogEntry>
         {
             public string Author { get; set; }
@@ -48,6 +47,26 @@ namespace Omgtu.GitLog
 
         public List<LogEntry> Entries { get; set; }
 
+        public class LogEntryComparer : IComparer<LogEntry>
+        {
+            public int Compare(LogEntry leftEntry,LogEntry rightEntry)
+            {
+                int authCompare = leftEntry.Author.CompareTo(rightEntry.Author);
+                if (authCompare!=0)
+                    return authCompare;
+
+                int dateCompare = leftEntry.Date.CompareTo(rightEntry.Date);
+                if (dateCompare != 0)
+                    return dateCompare;
+
+                int msgCompare = leftEntry.Message.CompareTo(rightEntry.Message);
+                if (msgCompare != 0)
+                    return msgCompare;
+
+                return 0;
+            }
+        }
+
         public Analyzer(string fileName)
         {
             this.Entries = new List<LogEntry>();
@@ -64,31 +83,29 @@ namespace Omgtu.GitLog
 
             foreach (string line in strings)
             {
-                string parsedLine = ValueFromString("Commit:", line);
+                string parsedLine = ValueFromString("Author:", line);
                 if (!string.IsNullOrEmpty(parsedLine))
                 {
-                    if (logEntry.IsValid())
-                        result.Add(logEntry);
-
-                    logEntry = new LogEntry();
+                    logEntry.Author = parsedLine.Trim();
                 }
                 else
                 {
-                    parsedLine = ValueFromString("Author:", line);
+                    parsedLine = ValueFromString("Date:", line);
                     if (!string.IsNullOrEmpty(parsedLine))
                     {
-                        logEntry.Author = parsedLine;
+                        logEntry.Date = parsedLine.Trim();
                     }
                     else
                     {
-                        parsedLine = ValueFromString("Date:", line);
+                        parsedLine = ValueFromString("commit", line);
                         if (!string.IsNullOrEmpty(parsedLine))
                         {
-                            logEntry.Date = parsedLine;
+                            logEntry = new LogEntry();
+                            result.Add(logEntry);
                         }
                         else
                         {
-                                logEntry.Message+=line;
+                            logEntry.Message += line.Trim();
                         }
                     }
                 }
@@ -102,7 +119,7 @@ namespace Omgtu.GitLog
             if (!inputLine.StartsWith(lineName))
                 return string.Empty;
 
-            string result = inputLine.Substring(lineName.Length-1,inputLine.Length - lineName.Length);
+            string result = inputLine.Substring(lineName.Length, inputLine.Length - lineName.Length);
             return result;
         }
 
