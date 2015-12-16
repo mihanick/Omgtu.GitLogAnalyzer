@@ -10,6 +10,7 @@ namespace Omgtu.GitLog
     public class Analyzer
     {
         public class LogEntry
+        public class LogEntry : IComparable<LogEntry>
         {
             public string Author { get; set; }
             public string Message { get; set; }
@@ -37,6 +38,11 @@ namespace Omgtu.GitLog
                     return false;
 
                 return true;
+            }
+            
+            public int CompareTo(LogEntry otherEntry)
+            {
+                return this.Author.ToLower().Trim().CompareTo(otherEntry.Author.ToLower().Trim());
             }
         }
 
