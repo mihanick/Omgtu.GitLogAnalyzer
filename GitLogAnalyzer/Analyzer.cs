@@ -50,7 +50,10 @@ namespace Omgtu.GitLog
 
         public Analyzer(string fileName)
         {
-            this.Entries = this.Parse(this.ReadFile(fileName));
+            this.Entries = new List<LogEntry>();
+            List<LogEntry> entries = this.Parse(this.ReadFile(fileName));
+            this.Entries = entries;
+            this.Entries.Sort();
         }
 
         public List<LogEntry> Parse(List<string> strings)
